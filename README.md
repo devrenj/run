@@ -36,3 +36,12 @@
 
 - Resumo: Permite selecionar herói e arma para que apareçam mensagens dinâmicas de acordo com as configurações
 - JavaScript
+
+### Referências
+
+[Dio - Digital Innovation One](https://web.dio.me/)
+Instrutores: Felipe Aguiar, Renan Johannsen
+
+### LICENSE
+
+Copyright (c) 2023 Roberto Nóbrega Jr. ([@devrenj](https://www.github.com/devrenj)) under MIT License
