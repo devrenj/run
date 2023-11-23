@@ -37,7 +37,7 @@
 }
 
 .enemy:hover {
-  filter:drop-shadow(2px 2px 5px #ffd700)
+  border: 1px solid #ff000080;
 }
 
 .hit {
