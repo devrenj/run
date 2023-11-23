@@ -3,7 +3,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: fixed no-repeat url('./src-jogo-da-memoria/images/background.jpg');
+  background: fixed no-repeat url('../images/background.jpg');
   background-size: cover;
   user-select: none;
   background-color: #000;
@@ -80,7 +80,7 @@ h2 {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('./src-jogo-da-memoria/images/logo.png');
+  background: url('../images/logo.png');
   object-fit: fill;
   transition: 0.25s;
   transform: rotateY(0deg);
