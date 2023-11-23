@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- 
+- Desenvolvido por: Roberto Nóbrega Jr.
+- Github @devrenj
+-
+- ESTE PROJETO NÃO É USADO PARA FINS COMERCIAIS
+- APENAS PARA DESENVOLVIMENTO ACADÊMICO
+- LICENSA MIT (c) 2023
+- SUA REPRODUÇÃO É PERMITIDA DESDE QUE OBSERVADAS AS MESMAS DIRETRIZES
+- AS IMAGENS FORAM OBTIDAS EM RESULTADOS DE BUSCAS PÚBLICAS
+- Agradecimentos: Steph Hoel @stephoel
+- Referências: MDN.com | W3Schools.com
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/style/reset.css">
+  <link rel="stylesheet" href="/src/style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">  
+  <title>Partidas Rankeadas</title>
+</head>
+<body>
+  
+  <main id="conteiner" class="flex-col-center">
+    <header id="titulo" class="flex-col-start"></header>
+    <section id="entrada" class="flex-col-center sombra-box fundo-transparente">
+      <div id="alinhamento">
+          <header id="cabecalho" class="flex-col-start">Classificador de Nível do herói</header>
+          <div id="form" class="fundo sombra-box borda">
+            <label for="nome">Nome:</label>
+            <input type="textarea" autocomplete="false" name="nome" id="nome" class="borda" placeholder="Digite aqui"></input>
+            <label for="experiencia">Experiência:</label>
+            <input type="textarea" name="experiencia" id="experiencia" class="borda" placeholder="Digite aqui"></input>
+
+            <div id="botoes">
+              <button type="button" class="botao sombra-txt fundo-gradiente-linear placeholder" onclick="clearInterval(timeout), limparTudo(), calcularXp()">Calcular</button>
+              <button type="button" class="botao sombra-txt fundo-gradiente-linear placeholder" onclick="limparTudo()">Reset</button>
+            </div>
+            </div>
+            <footer id="autor" class="flex-col-end">
+              <p>2023 (c) Roberto Nóbrega Jr.</p>
+            </footer>
+          </div>
+        </section>
+        
+      <section id="saida">
+        <p>
+          <span id="nomeHeroi" class="flex-col-center"></span>
+          <span id="nivelHeroi" class="flex-col-center"></span>
+        </p>
+        <sub>
+          <p>
+            <span id="mensagemServidor"></span>
+          </p>
+        </sub>
+      </section>
+      
+      <footer id="finalPagina" class="flex-col-end">
+      </footer>
+  </main>
+  <script src="/src/script/script.js"></script>
+</body>
+</html>

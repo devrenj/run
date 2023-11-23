@@ -1,0 +1,216 @@
+/**
+* Desenvolvido por: Roberto Nóbrega Jr.
+* Github @devrenj
+*
+* ESTE PROJETO NÃO É USADO PARA FINS COMERCIAIS
+* APENAS PARA DESENVOLVIMENTO ACADÊMICO
+* LICENSA MIT (c) 2023
+* SUA REPRODUÇÃO É PERMITIDA DESDE QUE OBSERVADAS AS MESMAS DIRETRIZES
+*
+* Agradecimentos: Steph Hoel @stephoel
+* Referências: MDN.com | W3Schools.com
+**/
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: #000;
+}
+
+body:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.6;
+  background-image: url('/src/images/aldous_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+#conteiner {
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  height: 100%;
+}
+
+#titulo {
+  background-image: linear-gradient(to bottom, #000, #ffffff01);
+  padding: 50px 0px 50px 0px;
+  width: 100%;
+}
+
+#finalPagina {
+  background-image: linear-gradient(to top, #000, #ffffff01);
+  padding: 50px 0px 50px 0px;
+  width: 100%;
+}
+
+/* --Retirado de Titulo--
+text-shadow: 1px 1px 4px #000;
+color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center; */
+
+#entrada {
+  margin: auto;
+  padding: 0px 30px 0px 30px ;
+  border-radius: 5px;
+  width: 400px;
+}
+
+#form {
+  display: grid;
+  grid-template-columns: 100%;
+  padding: 30% 20px 30% 20px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+#experiencia {
+  font-size: 45px;
+  border-radius: 5px;
+  height: 50px;
+}
+
+#experiencia::placeholder{
+  font-size: small;
+  text-align: center;
+}
+
+#nome {
+  font-size: 45px;
+  border-radius: 5px;
+  height: 50px;
+}
+
+#nome::placeholder{
+  font-size: small;
+  text-align: center;
+}
+
+#botoes {
+  width: 100%;
+  gap: 10px;
+  display: inline-flex;
+}
+
+#saida,
+#saida p {
+  width: 100%;
+}
+
+#nomeHeroi, 
+#nivelHeroi {
+  padding: 5px 0 5px 0;
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0px 30px 0px 30px ;
+  text-shadow: 1px 1px 4px #fff;
+  /* background-color: #ffffff20; */
+  width: 100%;
+}
+
+#mensagemServidor {
+  padding: 0 5px 0 5px;
+  color: darkred;
+  font-size: 14px;
+  font-weight: 900;
+  text-shadow: none;
+  text-align: center;
+  background-color: #ff000050;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 20px;
+}
+
+#cabecalho,
+#autor {
+  letter-spacing: 1.5px;
+  font-size: 14px;
+  color: #ffffff60;
+  margin: 5px 0 5px 0;
+  text-align: center;
+}
+
+/* Class */
+
+.fundo{
+  /* form */
+  background-color: #ffffff;
+}
+
+.fundo-gradiente-linear {
+  /* botao */
+  background: linear-gradient(rgb(225, 225, 0), rgb(225, 225, 128), rgb(255, 255, 190));
+}
+
+.sombra-txt {
+  /* botao */
+  text-shadow: 1px 1px 4px #000;
+}
+
+.sombra-box {
+  /* entrada */
+  box-shadow: 3px 3px 5px #000;
+}
+
+.fundo-transparente {
+  /* entrada */
+  background-color: #00000030;
+}
+
+.borda {
+  /* experiencia */
+  /* nome */
+  border: 1px solid darkgoldenrod;
+}
+
+.input::placeholder {
+  color: darkgoldenrod;
+  font-size: large;
+}
+
+.flex-col-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-col-end {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.flex-col-start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.botao {
+  width: 10em;
+  color: white;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid darkgoldenrod;
+  border-radius: 5px;
+}
