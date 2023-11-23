@@ -40,7 +40,7 @@ function countDown() {
 }
 
 function playSound(audioName) {
-  let audio = new Audio(`../audio/${audioName}.ogg`)
+  let audio = new Audio(`/src-detona-ralph/audio/${audioName}.ogg`)
   audio.volume = 0.2;
   audio.play();
 }
