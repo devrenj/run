@@ -39,8 +39,8 @@ function countDown() {
   }
 }
 
-function playSound(audioName) {
-  let audio = new Audio(`./src/audio/${audioName}.ogg`)
+function playSound(audio) {
+  let audio = new Audio(`../audio/${audio}.ogg`)
   audio.volume = 0.2;
   audio.play();
 }
