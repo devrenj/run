@@ -1,6 +1,6 @@
-# RUN: Execute os projetos
+# Execute os projetos
 
-## Este repositório foi criado para rodar as aplicações realizadas através da url: `https://renj.dev.br/run/[nome do projeto]`
+## Repositório criado para rodar as aplicações realizadas através da url: https://renj.dev.br/run/[nome do projeto]
 
 ### [Detona Ralph](https://renj.dev.br/run/detona-ralph.html)
 
