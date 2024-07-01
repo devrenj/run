@@ -2,6 +2,11 @@
 
 ## Repositório criado para rodar as aplicações realizadas através da url: https://renj.dev.br/run/[nome do projeto]
 
+### [CarPedia](https://renj.dev.br/run/carpedia.html)
+
+- Resumo: Enciclopédia de Marcas e Veículos Automotivos
+- Linguagem: `HTML, CSS`
+
 ### [Detona Ralph](https://renj.dev.br/run/detona-ralph.html)
 
 - Resumo: Jogo estilo 'whac-a-mole' em que você deve acertar o personagem Ralph (Disney)
