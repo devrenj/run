@@ -2,7 +2,7 @@
 
 ## Repositório criado para rodar as aplicações realizadas através da url: https://renj.dev.br/run/[nome do projeto]
 
-### [CarPedia](https://renj.dev.br/run/carpedia.html)
+### [CarPedia](https://renj.dev.br/run/carpedia-index.html)
 
 - Resumo: Enciclopédia de Marcas e Veículos Automotivos
 - Linguagem: `HTML, CSS`
@@ -12,7 +12,7 @@
 - Resumo: Jogo estilo 'whac-a-mole' em que você deve acertar o personagem Ralph (Disney)
 - Linguagem: `JavaScript`
 
-### [Jogo da memória (Match the heroes)](https://renj.dev.br/run/classificador-de-nivel.html)
+### [Jogo da memória (Match the heroes)](https://renj.dev.br/run/jogo-da-memoria.html)
 
 - Resumo: Os pares de heróis (League of Legends) devem ser completados até todos serem encontrados
 - Linguagem: `JavaScript`
@@ -22,7 +22,7 @@
 - Resumo: Consumo de API oficial da PokéDex
 - Linguagem: `JavaScript`
 
-### [Classificador de nível](https://renj.dev.br/run/classificador-de-nivel.html)
+### [Classificador de nível](https://renj.dev.br/run/rank.html)
 
 - Resumo: Calcula o rank de acordo com o nível informado
 - Linguagem: `JavaScript`
@@ -37,7 +37,7 @@
 - Resumo: Completar a página usando linguagem de estilização
 - Linguagens: `HTML, CSS`
 
-### [Classes de jogo](https://renj.dev.br/run/classes-de-jogo.html)
+### [Classes de jogo](https://renj.dev.br/run/classes-rpg.html)
 
 - Resumo: Permite selecionar herói e arma para que apareçam mensagens dinâmicas de acordo com as configurações
 - Linguagem: `JavaScript`
