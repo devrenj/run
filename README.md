@@ -49,6 +49,9 @@
   - Felipe Aguiar
   - Renan Johannsen
   - Michele Ambrosio
+- [Sistema Divina Providência](https://sistemadivinaprovidencia.org)
+- Instrutor:
+  - Hendell Gonzaga
 
 ### LICENSE
 
