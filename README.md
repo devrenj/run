@@ -1,6 +1,6 @@
 # Execute os projetos
 
-## Repositório criado para rodar as aplicações realizadas através da url: https://renj.dev.br/run/[nome do projeto]
+## Repositório criado para rodar as aplicações realizadas através da url: https://renj.dev.br/run/NOME-DO-PROJETO
 
 ### [CarPedia](https://renj.dev.br/run/carpedia.html)
 
