@@ -2,7 +2,7 @@
 
 ## Repositório criado para rodar as aplicações realizadas através da url: https://renj.dev.br/run/NOME-DO-PROJETO
 
-### [CarPedia](https://renj.dev.br/run/carpedia.html)
+### [CarPedia](https://renj.dev.br/run/carpedia-redirecionamento.html)
 
 - Resumo: Enciclopédia de Marcas e Veículos Automotivos
 - Linguagem: `HTML, CSS`
