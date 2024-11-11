@@ -81,6 +81,8 @@ h2 {
   position: absolute;
   inset: 0;
   background: url('../images/logo.png');
+  background-size: contain;
+  background-position: center;
   object-fit: fill;
   transition: 0.25s;
   transform: rotateY(0deg);
@@ -95,4 +97,27 @@ h2 {
 .boxOpen::after,
 .boxMatch::after {
   transform: rotateY(180deg);
+}
+
+@media (max-width: 425px) {
+  .game {
+    width: 320px;
+    height: 320px;
+    gap: 5px;
+    perspective: 500px;
+  }
+
+  .container h2 {
+    font-size: 2em;
+  }
+
+  .item {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    & img {
+    width: 75px;
+    height: 75px;
+    }
+  }
 }
