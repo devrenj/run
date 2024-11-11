@@ -20,7 +20,7 @@ let openCards = [];
 let shuffleHeroes = heroes.sort(() => (Math.random() > 0.5 ? 2 : -1))
 
 function mostrarImagem(heroi) {
-  return `<img src="./src-jogo-da-memoria/images/${heroi}.png"/>`;
+  return `<img src="./jogo-da-memoria-src/images/${heroi}.png"/>`;
 }
 
 
