@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Refresh" content="6; url=https://renj.dev.br/carpedia/" />
+  <title>Redirecionando...</title>
+</head>
+<style>
+  :root {
+    --cor: #e8d900;
+    --cor-escuro: #928800;
+  }
+
+  body::before {
+    content: '';
+    background-color: #000;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: var(--before-zIndex, -1000);
+    opacity: 0;
+    transition: opcaity 1s;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: opacity 1s;
+  }
+
+  p {
+    padding: 0 40px;
+    font-size: 14px;
+  }
+
+  a {
+    font-weight: bold;
+    color: var(--cor);
+    transition: color 0.5s;
+
+    &:hover {
+      color: var(--cor-escuro);
+      cursor: pointer;
+    }
+  }
+
+  #principal {
+    font-size: 40px;
+  }
+
+  #box {
+    display: flex;
+    flex-direction: row;
+    max-width: 600px;
+  }
+
+  #voltar {
+    display: flex;
+    padding: 0 40px;
+    font-size: 14px;
+    width: 200px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 2px solid var(--cor);
+    color: #333;
+    transition: background 0.5s;
+
+    &:hover {
+      background-color: var(--cor);
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+
+  #container {
+    margin: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  #pontilhado {
+    transition: all .5s ease-in-out;
+  }
+</style>
+
+<body>
+  <section id="container">
+    <h1>Estamos redirecionando você para:<br /></h1>
+    <section id="box">
+      <h2>
+        <span id="principal"></span><span id="pontilhado">.</span><span id="pontilhado">.</span><span
+          id="pontilhado">.</span>
+      </h2>
+    </section>
+    <p>
+      Você será redirecionado automaticamente<span id="tempo">
+        em 10 segundos</span>...
+    </p>
+    <p>
+      Caso desejar, <a href="https://renj.dev.br/carpedia/" id="redireconarManualmente">clique aqui</a> para
+      ser redirecionado manualmente.
+    </p>
+    <br />
+    <button id="voltar">Voltar</button>
+  </section>
+
+</body>
+<script type="module">
+  import { links } from './src/script/links.js'
+  const tempo = document.querySelector('#tempo');
+  const pontilhado = document.querySelectorAll('#pontilhado');
+  const body = document.querySelector('body');
+  const voltar = document.querySelector('#voltar');
+  const params = new URLSearchParams(window.location.search).get('site');
+  const principal = document.querySelector('#principal');
+  const redireconarManualmente = document.querySelector('#redireconarManualmente');
+  let segundos = 10; // Tempo global
+
+  async function redirecionar(site) {
+
+    if (links[site]?.url) {
+      redireconarManualmente.href = links[site].url
+      principal.innerText = links[site].desc ?? (site.at(0).toUpperCase() + site.slice(1));
+      await new Promise((resolve) => setTimeout(resolve, segundos * 1000));
+      window.location.href = links[site].url
+    } else {
+      links.default();
+      return;
+    }
+  }
+  redirecionar(params);
+
+  voltar.addEventListener('click', () => {
+    window.location.href = window.history.back();
+  });
+
+  let pontos = pontilhado.length - 1;
+
+  let efeitoPontilhado = setInterval(() => {
+    if (pontos >= 0) {
+      pontilhado[pontos].style.opacity = 0;
+      pontos--;
+    } else {
+      pontilhado.forEach((ponto) => {
+        ponto.style.opacity = 1;
+      });
+      pontos = pontilhado.length - 1;
+    }
+  }, 1000);
+
+  let timer = setInterval(() => {
+    tempo.innerText = `${segundos > 1 ? ` em ${segundos} segundos` : ` em ${segundos} segundo`
+      }`;
+    segundos--;
+    if (segundos < 0) {
+      tempo.style.display = 'none';
+      adicionarTransicao(body);
+      clearInterval(timer);
+    }
+  }, 1000);
+
+  function adicionarTransicao(elemento) {
+    elemento.style.setProperty('--before-zIndex', '1000');
+    elemento.style.opacity = 0;
+    let remover = setTimeout(() => {
+      removerTransicao(elemento);
+    }, 3000);
+  }
+
+  function removerTransicao(elemento) {
+    elemento.style.opacity = 1;
+    elemento.style.setProperty('--before-zIndex', '-1000', 'important');
+  }
+</script>
+
+</html>

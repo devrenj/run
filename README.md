@@ -2,12 +2,18 @@
 
 ## Repositório criado para rodar as aplicações realizadas através da url: https://renj.dev.br/run/NOME-DO-PROJETO
 
+### [Tradutor](https://renj.dev.br/run/tradutor.html)
+
+- Resumo: Tradutor de idiomas
+- Tecnologias: `JavaScript, HTML, TailwindCSS, Mente Maker API`
+- Agradecimento: [@MakerJunior](https://www.github.com/MakerJunior)
+
 ### [Calculadora IMC](https://renj.dev.br/run/calculadora-imc.html)
 
 - Resumo: Calculadora de IMC responsiva
 - Tecnologias: `JAVASCRIPT, HTML, BOOTSTRAP`
 
-### [CarPedia](https://renj.dev.br/run/carpedia-redirecionamento.html)
+### [CarPedia](./redirecionamento.html?site=carpedia)
 
 - Resumo: Enciclopédia de Marcas e Veículos Automotivos
 - Tecnologias: `HTML, CSS`
@@ -25,7 +31,7 @@
 ### [PokéDex](https://renj.dev.br/run/pokedex.html)
 
 - Resumo: Consumo de API oficial da PokéDex
-- Tecnologias: `JavaScript, HTML, CSS`
+- Tecnologias: `JavaScript, HTML, CSS, PokeAPI`
 
 ### [Classificador de nível](https://renj.dev.br/run/rank.html)
 
@@ -42,14 +48,14 @@
 - Resumo: Completar a página usando linguagem de estilização
 - Linguagens: `HTML, CSS`
 
-### [Classes de jogo](https://renj.dev.br/run/classes-rpg.html)
+### [Classes de jogo](https://renj.dev.br/run/incomplete.html)
 
 - Resumo: Permite selecionar herói e arma para que apareçam mensagens dinâmicas de acordo com as configurações
 - Tecnologias: `JavaScript, HTML, CSS`
 
 ### Referências
 
-- [Dio - Digital Innovation One](https://web.dio.me/)
+- [Dio - Digital Innovation One](./redirecionamento.html?site=dio)
 - Instrutores:
   - Felipe Aguiar
   - Renan Johannsen
@@ -57,4 +63,4 @@
 
 ### LICENSE
 
-Copyright (c) 2023 Roberto Nóbrega Jr. ([@devrenj](https://www.github.com/devrenj)) under MIT License
+Copyright &copy; 2023 Roberto Nóbrega Jr. ([@devrenj](./redirecionamento.html?site=devrenj)) under MIT License
